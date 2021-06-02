@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- for hover -- -->
+    <title>sabita vabi</title>
+<!-- for geo location -- -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- for resposive site or mobile view --- -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+a:link, a:visited {
+  background-color: lightgrey;
+  color: black;
+  width: 100%;
+  padding-top:5px;
+  padding-bottom:5px;
+  
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: lightgrey;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.left {
+  float: left;
+  width: 50%;
+  }
+.right {
+  float: left;
+  width: 44.8%;
+  }
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+   .left, .right {
+    width: 100%;
+  }
+</style>
+</head>
+
+<!-- for headline -->
+<body style="font-family:Verdana;color:#050000;background-color:#ffa2a2;">
+<div style="padding-left:100px;overflow:auto;text-align:center;">
+  <h1><a href="date with me in your area.html" >
+  DATE with me       
+  <!-- geolocation -->
+  <span id="city"></span></a></h1>
+  <script>
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+	$.ajax({
+		url: "https://geolocation-db.com/jsonp",
+		jsonpCallback: "callback",
+		dataType: "jsonp",
+		success: function( location ) {
+			$('#city').html(location.city);
+			$('#state').html(location.state);
+			$('#country').html(location.country_name);
+		 }
+	});		
+    </script>
+</div>
+<!-- 1 video + message + message-iframe -->
+
+<div style="overflow:auto">
+
+<!-- left video -->
+ <div class="left">
+  <div class="container"> 
+  <iframe class="responsive-iframe" src="https://iframe.dacast.com/vod/ae74102e-e3f4-ee43-b998-5d6c3817805b/a5727d4e-b72e-fffc-81fb-d6d3de02adad" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+ </div>
+
+<!-- right message + message-iframe -->
+ <div class="right">
+ <!-- right message link -->
+    <div style="padding-left:5px;padding-top:5px;padding-bottom:5px;">
+    <a href="https://rzp.io/l/jk9iyQLnHB" >MESSAGE Me--</a>
+    </div>
+	<!-- right video -->
+  <div class="container"> 
+  <iframe class="responsive-iframe" src="https://iframe.dacast.com/vod/ae74102e-e3f4-ee43-b998-5d6c3817805b/a5727d4e-b72e-fffc-81fb-d6d3de02adad" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+ </div>
+
+</div>
+
+<!-- the end links -->
+<div style="overflow:auto;padding-left:5px">
+<div style="padding-bottom:5px"> <a href="date with me in your area.html" > DATE with Me in your Area </a> </div>
+<div> <a href="https://rzp.io/l/jk9iyQLnHB" > PRIVATE SHOW for 10 minuts </a> </div>
+<div> <a href="https://rzp.io/l/jk9iyQLnHB" > PRIVATE SHOW for 20 minuts </a> </div>
+<div style="padding-bottom:5px"> <a href="https://rzp.io/l/jk9iyQLnHB" > PRIVATE SHOW for 1 hours </a> </div>
+<div > <a href="date with me in your area.html" > Meet Me in your Area </a> </div>
+</div>
+</body>
+</html>
+
+
+
+
